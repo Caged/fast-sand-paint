@@ -29,9 +29,9 @@ cdef double PI = 3.14159265359
 cdef double TWOPI = 2.0*PI
 
 cdef class Sand:
-  def __init__(self, int s):
-    self.w = s
-    self.h = s
+  def __init__(self, int w, int h):
+    self.w = w
+    self.h = h
 
     self.one = 1.0/<double>(s)
 
