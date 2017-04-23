@@ -56,7 +56,7 @@ cdef class Sand:
     self.ctx = cairo.Context(self.sur)
     self.set_bg([1,1,1,1])
 
-  def __cinit__(self, int s):
+  def __cinit__(self, int w, int h):
     return
 
   def __dealloc__(self):
