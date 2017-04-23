@@ -33,7 +33,7 @@ cdef class Sand:
     self.w = w
     self.h = h
 
-    self.one = 1.0/<double>(s)
+    self.one = 1.0/<double>(h)
 
     self.rA = 0.0
     self.gA = 0.0
