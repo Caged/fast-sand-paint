@@ -54,8 +54,8 @@ cdef class Sand:
         self.h
         )
     self.ctx = cairo.Context(self.sur)
-    self.ctx.rotate(45.0)
-    self.set_bg([1,1,1,1])
+    self.ctx.rotate(PI / 2)
+    self.set_bg([0,1,1,1])
 
   def __cinit__(self, int s):
     return
