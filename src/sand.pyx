@@ -55,7 +55,7 @@ cdef class Sand:
         )
     self.ctx = cairo.Context(self.sur)
     self.ctx.scale(5.0)
-    self.set_bg([1,1,1,1])
+    self.set_bg([1,0,1,1])
 
   def __cinit__(self, int s):
     return
