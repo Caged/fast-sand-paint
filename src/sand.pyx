@@ -53,8 +53,7 @@ cdef class Sand:
         self.w,
         self.h
         )
-    self.ctx = cairo.Context(self.sur)
-    self.ctx.rotate(PI / 2)
+    # self.ctx = cairo.Context(self.sur)
     self.set_bg([0,1,1,1])
 
   def __cinit__(self, int s):
