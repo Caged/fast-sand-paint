@@ -54,6 +54,7 @@ cdef class Sand:
         self.h
         )
     self.ctx = cairo.Context(self.sur)
+    self.ctx.scale(0.5)
     self.set_bg([1,1,1,1])
 
   def __cinit__(self, int s):
@@ -625,4 +626,3 @@ cdef class Sand:
   cpdef void write_to_png(self, str name, double gamma=1.0):
     self._transfer_pixels(gamma)
     self.sur.write_to_png(name)
-
