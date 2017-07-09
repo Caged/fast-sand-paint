@@ -626,3 +626,8 @@ cdef class Sand:
     self._transfer_pixels(gamma)
     self.sur.write_to_png(name)
 
+  @cython.wraparound(False)
+  @cython.boundscheck(False)
+  @cython.nonecheck(False)
+  cpdef void write_to_surface(self, double gamma=1.0):
+    self._transfer_pixels(gamma)

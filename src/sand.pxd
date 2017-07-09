@@ -54,4 +54,4 @@ cdef class Sand:
   cpdef void paint_triangles(self, double[:,:], double[:,:], double[:,:], long[:])
 
   cpdef void write_to_png(self, str, double gamma=*)
-
+  cpdef void write_to_surface(self, double gamma=*)
